@@ -200,7 +200,7 @@ var (
 
 func main() {
 
-	gocron.Every(1).Second().Do(status)
+	gocron.Every(2).Minute().Do(status)
 	gocron.Every(12).Hours().Do(sync) 
 	gocron.Every(1).Hours().Do(scrub)
 	

@@ -1,0 +1,11 @@
+[Unit]
+Description=Snapraid Runner and Prometeheus Exporter
+
+[Service]
+ExecStart=/usr/sbin/snapraid-runner
+StandardOutput=journal+console
+
+
+
+[Install]
+WantedBy=multi-user.target
